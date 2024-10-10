@@ -10,15 +10,15 @@ import {
 } from 'n8n-workflow';
 
 
-export class Template implements INodeType {
+export class Test2 implements INodeType {
   description: INodeTypeDescription = {
-    displayName: 'Template',
-    name: 'template',
+    displayName: 'Test2',
+    name: 'test2',
     group: ['transform'],
     version: 1,
     description: 'Use as base code for new n8n nodes',
     defaults: {
-      name: 'Template',
+      name: 'Test2',
     },
     inputs: ['main'],
     outputs: ['main'],
@@ -37,7 +37,7 @@ export class Template implements INodeType {
     //if (!credentials) {
     //  throw new NodeOperationError(this.getNode(), 'No credentials got returned!');
     //}
-	LoggerProxy.info(`Hello from Template`)
+	LoggerProxy.info(`Hello from Test2`)
     for (let i = 0; i < items.length; i++) {
 		
 	  }
